@@ -17,7 +17,11 @@ class Box {
       rect(pos.x, pos.y, this.width, this.height);
     }else{
       World.remove(world,this.body);
-      score=score+10;
+      
+      if(this.deleted===false){
+        score=score+10;
+        this.deleted=true
+      }
     }
     
   }
