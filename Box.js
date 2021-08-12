@@ -6,6 +6,7 @@ class Box {
     this.body = Bodies.rectangle(x,y,width,height,options);
     this.width = width;
     this.height = height;
+    this.deleted=false;
     World.add(world, this.body);
   }
   display(){
